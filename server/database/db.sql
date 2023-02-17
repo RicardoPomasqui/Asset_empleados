@@ -8,6 +8,7 @@ CREATE TABLE empleados(
     direccion varchar(255) NOT NULL,
     correo varchar(255) NOT NULL,
     cargo varchar(255) NOT NULL,
+    activo BOOLEAN DEFAULT TRUE
 )
 
 CREATE TABLE cargo(
