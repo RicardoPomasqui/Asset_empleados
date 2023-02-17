@@ -1,7 +1,6 @@
 import { AppBar, Box, Button, Container, Toolbar, Typography } from '@mui/material'
 import { Link, useNavigate } from 'react-router-dom'
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-
+import AttributionIcon from '@mui/icons-material/Attribution';
 
 export default function Navbar() {
   const navigate = useNavigate()
@@ -16,14 +15,11 @@ export default function Navbar() {
                 PERN
               </Link>
             </Typography>
-            <Button variant='contained' color='success' onClick={() => navigate("/empleado/new")}>
-              <AddCircleIcon />
-              &nbsp; Nuevo empleado
-            </Button>
+
             &nbsp;
             &nbsp;
             <Button variant='contained' color='warning' onClick={() => navigate("/cargo")}>
-              <AddCircleIcon />
+              <AttributionIcon />
               &nbsp;Cargo
             </Button>
           </Toolbar>

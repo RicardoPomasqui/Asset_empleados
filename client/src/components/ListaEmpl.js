@@ -5,7 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
-
+import AddReactionIcon from '@mui/icons-material/AddReaction';
 
 const ListaEmpl = () => {
 
@@ -52,6 +52,11 @@ const ListaEmpl = () => {
     return (
         <>
             <h1>LISTA DE EMPLEADOS</h1>
+
+            <Button variant='contained' color='success' onClick={() => navigate("/empleado/new")}>
+              <AddReactionIcon />
+              &nbsp; Nuevo empleado
+            </Button>
             <TableContainer component={Paper} sx={{ maxHeight: '550PX' }} style={{ backgroundColor: '#37474f' }} >
                 <Table sx={{ minWidth: 650 }} aria-label='simple table' stickyHeader >
                     <TableHead >
